@@ -720,7 +720,7 @@ public class MixpanelAPI {
         try {
             final JSONObject j = new JSONObject();
             j.put("alias", alias);
-            j.put("original", original);
+            j.put("distinct_id", original);
             track("$create_alias", j);
         } catch (final JSONException e) {
             MPLog.e(LOGTAG, "Failed to alias", e);
